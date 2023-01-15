@@ -1,0 +1,13 @@
+## Compile 방식과 Interpret 방식 비교
+
+- 런타임에 소스 코드를 한줄 씩 읽어들여 실행 가능한 언어로 바꾸는 작업을 반복하기 때문에, 동일한 코드의 프로그램으로 보았을 때 실행 시간에 프로그램이 뜨는데까지 걸리는 시간이 Compile 방식보다 Interpret 방식이 더 길다.
+
+- Compile 방식의 경우 프로그램을 구현하기 위한 소스 코드가 완전히 작성되어야만 compile 과정을 거쳐 테스트를 할 수 있지만, Interpret 방식의 경우 코드가 완전히 작성되지 않아도 작성된 부분까지만을 테스트 할 수 있다. (이와 같은 이유로 Jupyter notebook이 Python user들에게 많은 사랑을 받고 있다.) 
+
+- 소스 코드의 수정이 일어날 경우, Compile 방식의 경우 수정된 코드를 포함한 전체 코드에 대한 Compile을 다시 해야하지만, Interpret 방식의 경우 수정된 부분만 실행하면 된다.
+
+- Compile 방식의 경우 Runtime이 아닌 Compile time에 소스코드에 대한 오류를 체크하지만, Interpret 방식은 이러한 오류를 Run time이 되어서야 알 수 있다. 하지만 이는 IDE 또는 CI의 도움으로 어느정도 해결할 수 있다.
+
+
+[출처]
+https://blog.naver.com/ckdgus1433/222970252397
